@@ -1,0 +1,13 @@
+# To open the chrome
+chrome --remote-debugging-port=9222 --user-data-dir="~/ChromeProfile"
+
+
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+
+options = webdriver.ChromeOptions()
+options.add_experimental_option("debuggerAddress", "127.0.0.1:19222")
+options.add_argument("--ignore-certificate-error")
+options.add_argument("--ignore-ssl-errors")
+driver = webdriver.Chrome(options=options)
