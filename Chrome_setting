@@ -1,4 +1,4 @@
-# To open the chrome
+# To open the chrome with termainl
 chrome --remote-debugging-port=9222 --user-data-dir="~/ChromeProfile"
 
 
