@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 options = webdriver.ChromeOptions()
-options.add_experimental_option("debuggerAddress", "127.0.0.1:19222")
+options.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
 options.add_argument("--ignore-certificate-error")
 options.add_argument("--ignore-ssl-errors")
 driver = webdriver.Chrome(options=options)
